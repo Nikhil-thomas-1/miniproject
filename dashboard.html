@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard - Axio Creative Studios</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Axio Creative Studios</h1>
+        <div class="task-grid">
+            <!-- Scheduled Tasks -->
+            <div class="task-card" onclick="openScheduledTasks()">
+                <img src="icon/image.png" alt="Scheduled Tasks" />
+                <h2>Scheduled Tasks</h2>
+            </div>
+
+            <!-- Finished Tasks -->
+            <div class="task-card" onclick="openFinishedTasks()">
+                <img src="icon/image.png" alt="Finished Tasks" />
+                <h2>Finished Tasks</h2>
+            </div>
+
+            <!-- Resources -->
+            <div class="task-card" onclick="openResources()">
+                <img src="icon/image.png" alt="Resources" />
+                <h2>Resources</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
