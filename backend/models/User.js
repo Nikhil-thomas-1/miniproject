@@ -1,15 +1,16 @@
+const { v4: uuidv4 } = require("uuid"); // For unique random IDs
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
+    userId: { type: String, default: uuidv4, unique: true }, // Random Unique ID
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    role: { type: String, enum: ["admin", "manager", "employee"], default: "employee" }, 
-    shifts: [
+    role: { type: String, enum: ["admin", "manager", "employee"], default: "employee" }, // Role Field
+    workingHours: [
         {
             day: { type: String, required: true }, // e.g., "Monday"
-            startTime: { type: String, required: true }, // e.g., "09:00 AM"
-            endTime: { type: String, required: true } // e.g., "05:00 PM"
+            hours: { type: String, required: true } // e.g., "9:00AM-5:00PM"
         }
     ]
 }, { timestamps: true });

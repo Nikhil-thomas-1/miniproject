@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #6200ea;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 20px; /* Move logout button slightly to the left */
+}
+
+.navbar button:hover {
+  background-color: #e91e63;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-top: 80px; /* To account for the fixed navbar */
+  margin-bottom: 60px; /* To account for the fixed footer */
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling */
+}
+

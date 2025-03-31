@@ -1,0 +1,280 @@
+/* Resource.css - Corrected Version */
+
+/* Base Container */
+.resource-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header (shared with other pages) */
+  .employee-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Content Wrapper */
+  .resource-content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar */
+  .resource-sidebar {
+    width: 250px;
+    background-color: #34495e;
+    color: white;
+    padding: 1.5rem;
+  }
+  
+  .resource-sidebar-section {
+    margin-bottom: 2rem;
+  }
+  
+  .resource-sidebar-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .resource-sidebar-btn:hover {
+    background-color: #4a6278;
+  }
+  
+  /* Main Content */
+  .resource-main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  /* Panel Header */
+  .resource-panel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .resource-back-btn {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .resource-panel-title {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+  }
+  
+  /* Search Bar */
+  .resource-search-bar {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .resource-search-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+  
+  .resource-search-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  /* Resource Layout */
+  .resource-layout {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  /* Categories */
+  .resource-categories {
+    width: 220px;
+  }
+  
+  .resource-categories-panel {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .resource-category-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+  }
+  
+  .resource-category-item {
+    padding: 0.75rem 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .resource-category-item.active {
+    color: #3498db;
+    font-weight: 500;
+  }
+  
+  /* Resource Table */
+  .resource-table-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex: 1;
+  }
+  
+  .resource-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .resource-table th, 
+  .resource-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .resource-table th {
+    background-color: #f8f9fa;
+    color: #7f8c8d;
+    font-weight: 600;
+  }
+  
+  /* Download Button */
+  .resource-download-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+  }
+  
+  .resource-download-btn:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+  }
+  
+  /* Password Modal */
+  .resource-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .resource-password-modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  
+  .resource-password-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .resource-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .resource-modal-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .resource-modal-cancel {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  
+  .resource-modal-confirm {
+    background-color: #3498db;
+    color: white;
+    border: none;
+  }
+  
+  .resource-error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resource-content-wrapper {
+      flex-direction: column;
+    }
+    
+    .resource-sidebar {
+      width: 100%;
+    }
+    
+    .resource-layout {
+      flex-direction: column;
+    }
+    
+    .resource-categories {
+      width: 100%;
+    }
+    
+    .resource-panel-header {
+      flex-wrap: wrap;
+    }
+    
+    .resource-search-bar {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
